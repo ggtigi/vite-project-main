@@ -25,41 +25,41 @@ console.log('test')
 // 2–@, 3–# и т. д).
 // let number = prompt("Введите число от 0 до 9:");
 // switch (number) {
-//     case '0':
-//         console.log(")");
-//         break;
-//     case '1':
-//         console.log("!");
-//         break;
-//     case '2':
-//         console.log("@");
-//         break;
+    // case '0':
+    //     console.log(")");
+    //     break;
+    // case '1':
+    //     console.log("!");
+    //     break;
+    // case '2':
+    //     console.log("@");
+    //     break;
 
-//     case '3':
-//         console.log('#')
-//         break
+    // case '3':
+    //     console.log('#')
+    //     break
 
-//     case '4':
-//         console.log('$')
-//         break
+    // case '4':
+    //     console.log('$')
+    //     break
 
-//     case '5':
-//         console.log('%')
-//         break
-//     case '6':
-//         console.log('^')
-//         break
+    // case '5':
+    //     console.log('%')
+    //     break
+    // case '6':
+    //     console.log('^')
+    //     break
 
-//     case '7':
-//         console.log('&')
-//         break
+    // case '7':
+    //     console.log('&')
+    //     break
 
-//     case '8':
-//         console.log('*')
-//         break
-//         case '9':
-//             console.log('(')
-//             break
+    // case '8':
+    //     console.log('*')
+    //     break
+    //     case '9':
+    //         console.log('(')
+    //         break
 
 
 
@@ -77,9 +77,9 @@ console.log('test')
 // при этом не кратен 100
 
 // let year = parseInt(prompt('Введите год', '0') as string)
-// if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
-//   console.log('Год високосный');
-// } else {
+//  if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)) {
+//    console.log('Год високосный');
+//  } else {
 //   console.log('Год не високосный');
 // }
 
@@ -88,16 +88,60 @@ console.log('test')
 // Запросить у пользователя трехзначное число и проверить,
 // есть ли в нем одинаковые цифры.
 
-// let number = 22
-// if (number > 99 && number < 1000) {
-//     console.log ('всё Верно!')
+// let number = 222
+// if (number > 99 || number < 1000) {
+//     switch (number) {
+//         case 111:
+//             console.log("Тут есть одинаковые числа!");
+//             break;
+//         case 222:
+//             console.log("Тут есть одинаковые числа!");
+//             break;
+//         case 333:
+//             console.log("Тут есть одинаковые числа!");
+//             break;
+    
+//         case 444:
+//             console.log('Тут есть одинаковые числа!')
+//             break
+    
+//         case 555:
+//             console.log('Тут есть одинаковые числа!')
+//             break
+    
+//         case 666:
+//             console.log('Тут есть одинаковые числа!')
+//             break
+//         case 777:
+//             console.log('Тут есть одинаковые числа!')
+//             break
+    
+//         case 888:
+//             console.log('Тут есть одинаковые числа!')
+//             break
+    
+//         case 999:
+//             console.log('Тут есть одинаковые числа!')
+//             break
+//     }
 // } else {
-//     console.log('Это чило не трёхзначное')
+//     console.log('Всё верно!')
 // }
+
 
 //   дз2.6  Написать конвертор валют. Пользователь вводит количе-
 //   ство USD, выбирает, в какую валюту хочет перевести: EUR,
 //   UAN или AZN, и получает в ответ соответствующую сумму.
+
+// let money = {
+//     USD: { EUR: 0.85, UAN: 27.2, AZN: 1.7 }
+//   }
+//  let amout = ('Введите колличество USD')
+//  let fromCurrency = 'USD'
+//  let toCurrency = ('Выберите валюту')
+
+
+
 
 
 
