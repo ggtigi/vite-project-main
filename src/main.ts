@@ -141,6 +141,94 @@ console.log('test')
 //  let toCurrency = ('Выберите валюту')
 
 
+// dzM1W5.1 Написать функцию возведения числа в степень.
+function raiseToPower(base: number, exponent: number): number {
+    return Math.pow(base, exponent);
+}
+
+// dzM1W5.2 Написать функцию поиска наибольшего общего делителя.
+function greatestCommonDivisor(a: number, b: number): number {
+    if (b === 0) {
+        return a;
+    } else {
+        return greatestCommonDivisor(b, a % b);
+    }
+}
+
+// dzM1W5.3 Написать функцию для поиска максимальной цифры в числе.
+function maxDigit(num: number): number {
+    let max = 0;
+    while (num > 0) {
+        const digit = num % 10;
+        if (digit > max) {
+            max = digit;
+        }
+        num = Math.floor(num / 10);
+    }
+    return max;
+}
+
+// dzM1W5.4 Написать функцию, которая определяет простое ли пере-
+// данное число.
+function isPrime(num: number): boolean {
+    if (num <= 1) {
+        return false;
+    }
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// dzM1W5.5 Написать функцию для вывода всех множителей передан-
+// ного числа в возрастающем порядке.
+// Например: число 18 – множители 2 * 3 * 3
+function primeFactors(num: number): number[] {
+    const factors: number[] = [];
+    for (let i = 2; i <= num; i++) {
+        while (num % i === 0) {
+            factors.push(i);
+            num /= i;
+        }
+    }
+    return factors;
+}
+
+// dzM1W5.6 Написать функцию, которая возвращает число Фибоначчи
+// по переданному порядковому номеру.
+// Числа Фибоначчи: 1, 1, 2, 3, 5, 8, 13… Ряд основывается на
+// том, что каждое число равно сумме двух предыдущих чисел.
+// Например: порядковый номер 3 – число 2, порядковый
+// номер 6 – число 8
+function fibonacci(n: number): number {
+    if (n <= 1) {
+        return n;
+    }
+    let a = 1;
+    let b = 1;
+    let temp;
+    for (let i = 3; i <= n; i++) {
+        temp = a + b;
+        a = b;
+        b = temp;
+    }
+    return b;
+}
+
+
+console.log(raiseToPower(2, 3))
+console.log(greatestCommonDivisor(24, 36))
+console.log(maxDigit(23658))
+console.log(isPrime(17))
+console.log(primeFactors(18))
+console.log(fibonacci(6))
+
+
+
+
+
 
 
 
